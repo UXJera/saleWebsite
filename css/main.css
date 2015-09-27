@@ -1,0 +1,302 @@
+/* line 1, ../sass/base/_core.scss */
+body {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Droid-Sans", Arial, sans-serif;
+  font-weight: 400;
+  padding-top: 25px;
+}
+
+/* line 9, ../sass/base/_core.scss */
+.hidden {
+  visibility: hidden;
+  transition: display .4s;
+  clear: both;
+  width: 0%;
+}
+
+/* line 16, ../sass/base/_core.scss */
+.btn-primary {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  background: #2c3e50;
+  border: #2c3e50;
+  color: #7f8c8d;
+  transition: background .5s, color .5s;
+}
+
+/* line 27, ../sass/base/_core.scss */
+.btn-primary.active {
+  transition: background .5s, color .5s;
+  background: #3498db;
+}
+
+/* line 32, ../sass/base/_core.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+.header {
+  background: #9BC8E5;
+  color: white;
+  min-height: 97vh;
+}
+/* line 5, ../sass/layout/_header.scss */
+.header.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 11, ../sass/layout/_header.scss */
+.landing-bg {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+/* line 17, ../sass/layout/_header.scss */
+.landing-bg img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  /* line 17, ../sass/layout/_header.scss */
+  .landing-bg img {
+    width: auto;
+  }
+}
+
+/* line 28, ../sass/layout/_header.scss */
+#home .landing-bg {
+  height: 100%;
+  background-color: transparent;
+}
+/* line 31, ../sass/layout/_header.scss */
+#home .landing-bg img {
+  height: auto;
+  bottom: 0px;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+/* line 38, ../sass/layout/_header.scss */
+.navbar {
+  min-height: 40px;
+}
+
+/* line 42, ../sass/layout/_header.scss */
+.navbar-fixed-top {
+  background: black;
+  color: white;
+}
+/* line 45, ../sass/layout/_header.scss */
+.navbar-fixed-top li {
+  margin-top: 8px;
+  padding: 5px 0;
+  border: 2px solid red;
+}
+
+/* line 52, ../sass/layout/_header.scss */
+.brand h1 {
+  font-size: 1.65em;
+  margin-top: 0px;
+  padding-top: 7px;
+}
+@media screen and (max-width: 600px) {
+  /* line 52, ../sass/layout/_header.scss */
+  .brand h1 {
+    font-size: 0;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  /* line 62, ../sass/layout/_header.scss */
+  .filter-buttons {
+    font-size: .7em;
+  }
+}
+@media screen and (max-width: 445px) {
+  /* line 62, ../sass/layout/_header.scss */
+  .filter-buttons {
+    font-size: .6em;
+  }
+}
+
+/* line 71, ../sass/layout/_header.scss */
+.home-message {
+  padding-top: 50px;
+}
+
+/* line 78, ../sass/layout/_header.scss */
+.item img {
+  min-height: 500px;
+}
+@media screen and (max-width: 996px) {
+  /* line 78, ../sass/layout/_header.scss */
+  .item img {
+    min-height: auto;
+  }
+}
+
+/* line 86, ../sass/layout/_header.scss */
+.carousel-container {
+  margin: 10vh auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  background: #153FA3;
+}
+/* line 93, ../sass/layout/_header.scss */
+.carousel-container .carousel-header {
+  background: black;
+}
+/* line 95, ../sass/layout/_header.scss */
+.carousel-container .carousel-header h3 {
+  font-size: 2em;
+  margin: 0;
+  padding: 15px 0;
+}
+
+/* line 103, ../sass/layout/_header.scss */
+.carouselPrice {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+/* line 109, ../sass/layout/_header.scss */
+#carousel-main {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 1, ../sass/layout/_itemList.scss */
+.main {
+  background-color: #2E84CE;
+  padding: 0;
+}
+
+/* line 7, ../sass/layout/_itemList.scss */
+.itemInfo .inner {
+  min-height: 560px;
+  background: #E6E6F1;
+  border-radius: 5px;
+}
+/* line 11, ../sass/layout/_itemList.scss */
+.itemInfo .inner img {
+  max-height: 250px;
+  max-width: 100%;
+}
+@media screen and (max-width: 900px) {
+  /* line 7, ../sass/layout/_itemList.scss */
+  .itemInfo .inner {
+    min-height: 500px;
+  }
+}
+
+/* line 21, ../sass/layout/_itemList.scss */
+.itemName {
+  font-weight: 700;
+  min-height: 40px;
+  padding-top: 10px;
+  margin: 10px 0;
+  font-size: 26px;
+}
+@media screen and (max-width: 1200px) {
+  /* line 21, ../sass/layout/_itemList.scss */
+  .itemName {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 21, ../sass/layout/_itemList.scss */
+  .itemName {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 21, ../sass/layout/_itemList.scss */
+  .itemName {
+    font-size: 24px;
+  }
+}
+
+/* line 38, ../sass/layout/_itemList.scss */
+.description {
+  text-align: left;
+  padding: 5px 20px;
+  line-height: 1.75em;
+  min-height: 125px;
+}
+@media screen and (max-width: 996px) {
+  /* line 43, ../sass/layout/_itemList.scss */
+  .description li {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 38, ../sass/layout/_itemList.scss */
+  .description {
+    min-height: 155px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 38, ../sass/layout/_itemList.scss */
+  .description {
+    font-size: 1.3em;
+    min-height: 70px;
+  }
+}
+
+/* line 58, ../sass/layout/_itemList.scss */
+.askingPrice {
+  font-size: 20px;
+}
+
+/* line 62, ../sass/layout/_itemList.scss */
+.price {
+  font-size: 36px;
+  font-weigth: 700;
+  margin-bottom: 10px;
+  transition: background .5s, color .5s;
+}
+/* line 67, ../sass/layout/_itemList.scss */
+.price:hover {
+  background: #222;
+  color: #eee;
+  transition: background .5s, color .5s;
+}
+
+/* line 75, ../sass/layout/_itemList.scss */
+.description li {
+  text-align: left;
+}
+/* line 78, ../sass/layout/_itemList.scss */
+.description span {
+  font-weight: 700;
+}
+
+/* line 1, ../sass/layout/_contact.scss */
+#contactUs {
+  background: #153FA3;
+  min-height: 40vh;
+  color: white;
+}
+
+/* line 9, ../sass/layout/_contact.scss */
+.contact-container h3 {
+  font-size: 2em;
+  font-weight: 700;
+}
+/* line 13, ../sass/layout/_contact.scss */
+.contact-container p {
+  font-size: 1.15em;
+}

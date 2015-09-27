@@ -1,0 +1,8 @@
+var itemList = [
+{
+	name: 4 Cabinets,
+	image: '',
+	price: 49.99*,
+	description: 'Dimensions\: 60" x 30" 18"\nSolid Build, 3 shelves\n*Price per cabinet',	
+},
+];
