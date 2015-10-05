@@ -1,4 +1,4 @@
-/* line 1, ../sass/base/_core.scss */
+/* line 8, ../sass/base/_core.scss */
 body {
   text-align: center;
   font-size: 16px;
@@ -7,7 +7,7 @@ body {
   padding-top: 25px;
 }
 
-/* line 9, ../sass/base/_core.scss */
+/* line 16, ../sass/base/_core.scss */
 .hidden {
   visibility: hidden;
   transition: display .4s;
@@ -15,7 +15,7 @@ body {
   width: 0%;
 }
 
-/* line 16, ../sass/base/_core.scss */
+/* line 23, ../sass/base/_core.scss */
 .btn-primary {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -27,13 +27,13 @@ body {
   transition: background .5s, color .5s;
 }
 
-/* line 27, ../sass/base/_core.scss */
+/* line 34, ../sass/base/_core.scss */
 .btn-primary.active {
   transition: background .5s, color .5s;
   background: #3498db;
 }
 
-/* line 32, ../sass/base/_core.scss */
+/* line 39, ../sass/base/_core.scss */
 img {
   max-width: 100%;
 }
@@ -103,49 +103,64 @@ img {
 }
 
 /* line 52, ../sass/layout/_header.scss */
-.brand h1 {
-  font-size: 1.65em;
+.brand a {
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  color: white;
   margin-top: 0px;
   padding-top: 7px;
+  transition: color 0.5s;
+}
+/* line 59, ../sass/layout/_header.scss */
+.brand a:hover {
+  color: #9BC8E5;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+/* line 64, ../sass/layout/_header.scss */
+.brand a h1 {
+  margin-top: 10px;
+  font-size: 1.6em;
 }
 @media screen and (max-width: 600px) {
   /* line 52, ../sass/layout/_header.scss */
-  .brand h1 {
+  .brand a {
     font-size: 0;
     visibility: hidden;
   }
 }
 
 @media screen and (max-width: 996px) {
-  /* line 62, ../sass/layout/_header.scss */
+  /* line 74, ../sass/layout/_header.scss */
   .filter-buttons {
     font-size: .7em;
   }
 }
 @media screen and (max-width: 445px) {
-  /* line 62, ../sass/layout/_header.scss */
+  /* line 74, ../sass/layout/_header.scss */
   .filter-buttons {
     font-size: .6em;
   }
 }
 
-/* line 71, ../sass/layout/_header.scss */
+/* line 83, ../sass/layout/_header.scss */
 .home-message {
   padding-top: 50px;
 }
 
-/* line 78, ../sass/layout/_header.scss */
+/* line 90, ../sass/layout/_header.scss */
 .item img {
   min-height: 500px;
+  width: 100%;
 }
 @media screen and (max-width: 996px) {
-  /* line 78, ../sass/layout/_header.scss */
+  /* line 90, ../sass/layout/_header.scss */
   .item img {
     min-height: auto;
   }
 }
 
-/* line 86, ../sass/layout/_header.scss */
+/* line 99, ../sass/layout/_header.scss */
 .carousel-container {
   margin: 10vh auto;
   border: 2px solid black;
@@ -154,25 +169,35 @@ img {
   overflow: hidden;
   background: #153FA3;
 }
-/* line 93, ../sass/layout/_header.scss */
+/* line 106, ../sass/layout/_header.scss */
 .carousel-container .carousel-header {
   background: black;
 }
-/* line 95, ../sass/layout/_header.scss */
+/* line 108, ../sass/layout/_header.scss */
 .carousel-container .carousel-header h3 {
   font-size: 2em;
   margin: 0;
   padding: 15px 0;
 }
 
-/* line 103, ../sass/layout/_header.scss */
+/* line 116, ../sass/layout/_header.scss */
+.carousel-indicators {
+  bottom: 0;
+}
+
+/* line 120, ../sass/layout/_header.scss */
+.carousel-caption {
+  bottom: 0px;
+}
+
+/* line 124, ../sass/layout/_header.scss */
 .carouselPrice {
   color: white;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
 
-/* line 109, ../sass/layout/_header.scss */
+/* line 130, ../sass/layout/_header.scss */
 #carousel-main {
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -266,13 +291,13 @@ img {
   font-size: 36px;
   font-weigth: 700;
   margin-bottom: 10px;
-  transition: background .5s, color .5s;
+  transition: background 0.5s, color 0.5s;
 }
 /* line 67, ../sass/layout/_itemList.scss */
 .price:hover {
   background: #222;
   color: #eee;
-  transition: background .5s, color .5s;
+  transition: background 0.5s, color 0.5s;
 }
 
 /* line 75, ../sass/layout/_itemList.scss */
@@ -299,4 +324,36 @@ img {
 /* line 13, ../sass/layout/_contact.scss */
 .contact-container p {
   font-size: 1.15em;
+}
+
+/* line 18, ../sass/layout/_contact.scss */
+.mail-button {
+  font-size: 1.2em;
+  transition: background 0.5s;
+}
+/* line 21, ../sass/layout/_contact.scss */
+.mail-button a:hover {
+  background-color: #9BC8E5;
+  text-decoration: none;
+  transition: background 0.5s;
+}
+
+/* line 28, ../sass/layout/_contact.scss */
+footer {
+  width: 100%;
+  background-color: #28313C;
+  text-align: right;
+}
+/* line 32, ../sass/layout/_contact.scss */
+footer h6 {
+  color: white;
+}
+/* line 34, ../sass/layout/_contact.scss */
+footer h6 a {
+  color: #9BC8E5;
+}
+/* line 36, ../sass/layout/_contact.scss */
+footer h6 a:hover {
+  color: #2E84CE;
+  text-decoration: none;
 }

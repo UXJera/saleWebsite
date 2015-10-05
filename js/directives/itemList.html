@@ -1,7 +1,7 @@
 <div class="itemInfo col-sm-4">
 	<div class="inner {{listing.type}}">
 		<h4 class="itemName">{{ listing.name }}</h4>
-		<a href="#" data-featherlight="{{listing.image}}"><img ng-src="{{ listing.thumb}}"></a>
+		<a href="#" data-featherlight="{{listing.image}}"><img ng-src="{{ listing.thumb}}" alt="{{listing.name}}"></a>
 		<ul>
 		<li class="description" ng-bind-html="listing.description | htmlConvert"></li>
 		<ul>

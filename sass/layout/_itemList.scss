@@ -63,11 +63,11 @@
 	font-size: 36px;
 	font-weigth: 700;
 	margin-bottom: 10px;
-	transition: background .5s, color .5s;
+	transition: $trans-bg, $trans-color;
 	&:hover {
 		background: #222 ;
 		color: #eee;
-		transition: background .5s, color .5s;
+		transition: $trans-bg, $trans-color;
 	}
 }
 

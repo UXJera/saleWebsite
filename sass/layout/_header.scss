@@ -49,10 +49,22 @@
 	}
 }
 
-.brand h1 { 
-	font-size: 1.65em;
+.brand a { 
+	font-family: 'Arvo', serif;
+	font-weight: 400;
+	color: white;
 	margin-top: 0px;
 	padding-top: 7px;
+	transition: $trans-color;
+	&:hover {
+		color: $lightblue;
+		transition: $trans-color;
+		text-decoration: none;
+	}
+	h1 {
+		margin-top: 10px;
+		font-size: 1.6em;
+	}
 	@media screen and (max-width: 600px) {
 		font-size: 0;
 		visibility: hidden;
@@ -77,6 +89,7 @@
 .item {
 	img {
 		min-height: 500px;
+		width: 100%;
 		@media screen and (max-width: 996px) {
 			min-height: auto;
 		}		
@@ -98,6 +111,14 @@
 			padding: 15px 0;
 		}
 	}
+}
+
+.carousel-indicators {
+	bottom: 0;
+}
+
+.carousel-caption {
+		bottom: 0px;
 }
 
 .carouselPrice {

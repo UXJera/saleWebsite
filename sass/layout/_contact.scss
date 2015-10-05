@@ -16,6 +16,27 @@
 }
 
 .mail-button{
-
+	font-size: 1.2em;
+	transition: $trans-bg;
+	a:hover {
+		background-color: $lightblue;
+		text-decoration: none;
+		transition: $trans-bg;
+	}
 }
 
+footer {
+	width: 100%;
+	background-color: $dark;
+	text-align: right;
+	h6 {
+		color: white;
+		a{
+			color: $lightblue;
+			&:hover {
+				color: $blue;
+				text-decoration: none;
+			}
+		}
+	}
+}
