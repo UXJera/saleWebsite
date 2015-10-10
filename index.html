@@ -4,12 +4,17 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Arvo:400' rel='stylesheet' type='text/css'>
+	<meta name="description" content="Come see our wares! We have plenty of furniture and antiques that need to go!">
+	<meta name="author" content="Jeremiah Nyman">
+	<meta name="keywords" content="Wichita,Furniture,Yard Sale,Nyman,ABCBoT,ABC,Furniture,Appliances,Antiques,Electronics,Slot Machine">
 	<link rel="stylesheet" href="css/screen.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/main.css"/>
 	<link rel="stylesheet" href="css/featherlight.min.css"/>
+	<title>ABC Buy Our Things | Furniture, Antiques, and Appliances that need to move!</title>
 
 </head>
 
@@ -18,30 +23,31 @@
 <div class="navbar navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="brand pull-left">
-			<a href="#"><h1>ABC buy our things.com</h1></a>
+			<a href="#"><h1>ABC Buy Our Things.com</h1></a>
 		</div>
-		<div class="btn-group pull-right filter-buttons" data-toggle="buttons">
-			<label id="furniture" class="btn btn-primary active">
-				<input id="furniture1" type="checkbox" autocomplete="off" checked>Furniture
-			</label>
-			<label id="antiques" class="btn btn-primary active" >
-				<input type="checkbox" autocomplete="off" checked>Antiques
-			</label>
-			<label id="electronics" class="btn btn-primary active" >
-				<input type="checkbox" autocomplete="off" checked >Electronics
-			</label>			
-			<label id="other" class="btn btn-primary active" >
-				<input type="checkbox" autocomplete="off" checked>Other
-			</label>			
-		</div>
+			<div class="btn-group pull-right filter-buttons" data-toggle="buttons">
+				<div class="filter-top">Filter Items By:</div>
+				<label id="furniture" class="btn btn-primary active button-first">
+					<input id="furniture1" type="checkbox" autocomplete="off" checked>Furniture
+				</label>
+
+				<label id="antiques" class="btn btn-primary active" >
+					<input type="checkbox" autocomplete="off" checked>Antiques
+				</label>
+				<label id="appliances" class="btn btn-primary active" >
+					<input type="checkbox" autocomplete="off" checked >Appliances
+				</label>			
+				<label id="other" class="btn btn-primary active" >
+					<input type="checkbox" autocomplete="off" checked>Other
+				</label>			
+			</div>
 	</div>
 </div>
 	<div class="container-fluid header" id="home">
 	 <div class="landing-bg"><img src="img/bg/mountains.png"></div>
-	 <!--div class="container home-message">
-		<h1>The Nyman Armory</h1>
-		<h3>If you are interested in any item, click the price and find out how to contact us.</h3>
-	</div>
+		 <div class="container home-message">
+			<h3>New items will be added as the move date gets closer, so keep checking back!</h3>
+		</div>
 	<!-- Carousel -->
 <div class="container carousel-container">
 	<div class="carousel-header">
@@ -131,7 +137,7 @@
 	<div class="contact-container col-sm-offset-2 col-sm-8">
 		<h3> How to get in contact </h3>
 		<p> If you are interested in any of the items or if you'd like more information, you can <a href="mailto: abcbuyourthings@gmail.com">click here</a> and send us an email with your questions or set up a appointment to inspect the items.</p>
-		<button class="btn mail-button"><a href="mailto:abcbuyourthings@gmail.com">Send us an email</a></button>
+		<a href="mailto:abcbuyourthings@gmail.com"><button class="btn mail-button">Send us an email</button></a>
 	</div>
 </div>
 
@@ -146,12 +152,13 @@
 
 <script src="js/featherlight.min.js"></script>
 
-<script src="js/myapp.js"></script>
+<script src="js/app.js"></script>
+<script src="js/filters/htmlConvert.js"></script>
 
-<script src="js/controllers/ItemController.js"></script>
+<!--script src="js/controllers/ItemController.js"></script>
 <script src="js/filters/htmlConvert.js"></script>
 <script src="js/directives/itemList.js"></script>
-<script src="js/hideClass.js"></script>
+<script src="js/hideClass.js"></script-->
 
 
 </body>

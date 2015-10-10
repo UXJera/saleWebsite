@@ -10,20 +10,37 @@
 		font-size: 2em;
 		font-weight: 700;
 	}
+	a {
+		text-decoration: none;
+	}	
 	p {
+		padding: 10px 0;
 		font-size: 1.15em;
+		a {	
+			font-weight: 700;
+			color: lighten($blue, 10%);
+			transition: $trans-color;
+			&:hover {
+				color: $light;
+				transition: $trans-color;
+			}
+		}
 	}
 }
 
+
 .mail-button{
 	font-size: 1.2em;
-	transition: $trans-bg;
-	a:hover {
-		background-color: $lightblue;
-		text-decoration: none;
-		transition: $trans-bg;
+	font-weight: 700;
+	transition: $trans-bg, $trans-color;
+	color: $darkblue;
+	&:hover {
+		color: $light;
+		background-color: $blue;
+		transition: $trans-bg, $trans-color;
 	}
 }
+
 
 footer {
 	width: 100%;
