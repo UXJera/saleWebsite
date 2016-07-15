@@ -38,19 +38,18 @@
 					<input type="checkbox" autocomplete="off" checked >Appliances
 				</label>
 				<label id="other" class="btn btn-primary active" >
-					<input type="checkbox" autocomplete="off" checked>Misc
+					<input type="checkbox" autocomplete="off" checked>Other
 				</label>
 			</div>
 	</div>
 </div>
 
 <div class="container-fluid header" id="home">
- <div class="landing-bg"><img src="img/bg/mountains.png"></div>
-	 <div class="container home-message">
-		<h3>Prices have been lowered on May 7th!</h3><h3>We're moving soon so please Buy Our Things!</h3>
-	</div>
-
-<!-- Carousel -->
+	 <div class="landing-bg"><img src="img/bg/mountains.png"></div>
+		 <div class="container home-message">
+			<h3>More items have been added on October 18. Still more to come!</h3>
+		</div>
+	<!-- Carousel -->
 <div class="container carousel-container">
 	<div class="carousel-header">
 		<h3>FEATURED ITEMS</h3>
@@ -64,8 +63,8 @@
 		<li data-target="#carousel-main" data-slide-to="4"></li>
 	</ol>
 
-	<!-- Carousel Item List -->	
-	
+	<!-- Carousel Item List -->
+
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
 			<div class="col-sm-offset-2 col-sm-8">
@@ -74,7 +73,7 @@
 					<a href="#contactUs"><button class="price carouselPrice">$99.99</button></a>
 				</div>
 			</div>
-		</div>	
+		</div>
 		<div class="item">
 			<div class="col-sm-offset-2 col-sm-8">
 				<img src="img/tv-stand-thumb.jpg" alt="TV Stand">
@@ -121,11 +120,9 @@
 	</div>
 </div>
 </div>
-</div>
-
-
 
 <!-- Items List -->
+
 <main class="container-fluid main">
 	<div class="" ng-controller="ItemController">
 		<div ng-repeat="item in saleItems">
@@ -142,28 +139,29 @@
 		<h3> How to get in contact </h3>
 		<p> If you are interested in any of the items or if you'd like more information, you can <a href="mailto: abcbuyourthings@gmail.com">click here</a> and send us an email with your questions or set up a appointment to inspect the items.</p>
 		<a href="mailto:abcbuyourthings@gmail.com"><button class="btn mail-button">Send us an email</button></a>
-		<h3> F.A.Q. </h3>
-		<p><span>Where are you located?</span><br> We are located near downtown Wichita, with a storage unit closer to the west side of Wichtia.</p>
-		<p><span>What payments do you accept?</span><br>Currently, cash is the only method of payment we accept.</p>
-		<p><span>Are prices negotiable?</span><br>Absolutely, within reason.</p>
-		<p><span>If I buy your things, will you bring them to me?</span><br>No. You are responsible for the pickup and transportation.</p>
-		<p><span>When can I pick the things up?</span><br>We are available during daylight hours (7AM - 8PM) and are willing to work around your schedule.</p>
 	</div>
 </div>
 
 <footer class="container-fluid footer pull-right">
-	<h6>Created by <a href="https://www.linkedin.com/in/jeremiahnyman" target="_blank">@UXJera</a> in 2015.</h6>
+	<h6>Created by <a href="http://bit.ly/1gZeufN" target="_blank">Jeremiah Nyman</a> in 2015.</h6>
 </footer>
-</div>
 
+<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
 
 <script src="js/featherlight.min.js"></script>
 
+<!-- script src="js/myApp.js"></script-->
 <script src="js/app.js"></script>
 <script src="js/filters/htmlConvert.js"></script>
+
+<!--script src="js/controllers/ItemController.js"></script>
+<script src="js/filters/htmlConvert.js"></script>
+<script src="js/directives/itemList.js"></script>
+<script src="js/hideClass.js"></script-->
+
 
 </body>
 </html>

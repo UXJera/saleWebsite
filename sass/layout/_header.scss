@@ -1,7 +1,7 @@
 .header {
 	background: transparentize($lightblue, .4);//rgba(41, 128, 185,6.0);
 	color: white;
-	min-height: 80vh;
+	min-height: 20vh;
 	&.container-fluid {
 		padding-left: 0;
 		padding-right: 0;
@@ -21,16 +21,16 @@
 		height: 100%;
 		@media screen and (max-width: 767px) {
 			width: auto;
-		}	
+		}
 	}
-}	
+}
 
 #home .landing-bg {
 	position: fixed;
 	height: 100vh;
-    min-height: 80vh; 
+    min-height: 80vh;
     background-color: transparent;
-	img { 
+	img {
 		  height: auto;
 		  bottom: 0;
 		  @include opacity(0.2);
@@ -38,7 +38,7 @@
 }
 
 .navbar {
-	min-height: 40px; 
+	min-height: 40px;
 }
 
 .navbar-fixed-top {
@@ -51,7 +51,7 @@
 	}
 }
 
-.brand a { 
+.brand a {
 	font-family: 'Open Sans', serif;
 	font-weight: 400;
 	color: white;
@@ -68,7 +68,7 @@
 	@media screen and (max-width: 600px) {
 		font-size: 0;
 		visibility: hidden;
-	}	
+	}
 }
 
 .filter-top {
@@ -76,7 +76,7 @@
 	border-top-left-radius:2px;
 	border-top-right-radius:2px;
 	border-bottom: 1px solid $light;
-}	
+}
 
 .btn-primary {
 	border-top-right-radius: 0;
@@ -108,7 +108,7 @@
 	padding: 40px 0 15px 0;
 	h3{
 	font-weight: 700;
-		font-size: 1.3em;
+		font-size: 1.8em;
 		color: $dark;
 	}
 }
@@ -119,7 +119,7 @@
 		width: 100%;
 		@media screen and (max-width: 996px) {
 			min-height: auto;
-		}		
+		}
 	}
 }
 

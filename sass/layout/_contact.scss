@@ -3,6 +3,7 @@
 	//border-top: 1px solid black;
 	min-height: 40vh;
 	color: white;
+	span {font-weight: 700; font-size: 1.25em; color: lighten($blue, 25%);}
 }
 
 .contact-container {
@@ -12,16 +13,16 @@
 	}
 	a {
 		text-decoration: none;
-	}	
+	}
 	p {
 		padding: 10px 0;
 		font-size: 1.15em;
-		a {	
+		a {
 			font-weight: 700;
-			color: lighten($blue, 10%);
+			color: complement($blue);
 			transition: $trans-color;
 			&:hover {
-				color: $light;
+				color: $blue;
 				transition: $trans-color;
 			}
 		}

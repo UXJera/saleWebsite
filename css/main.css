@@ -24,7 +24,7 @@ img {
 .header {
   background: rgba(155, 200, 229, 0.6);
   color: white;
-  min-height: 80vh;
+  min-height: 20vh;
 }
 /* line 5, ../sass/layout/_header.scss */
 .header.container-fluid {
@@ -162,7 +162,7 @@ img {
 /* line 109, ../sass/layout/_header.scss */
 .home-message h3 {
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.8em;
   color: #28313C;
 }
 
@@ -231,8 +231,9 @@ img {
   min-height: 560px;
   background: #E6E6F1;
   border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
 }
-/* line 11, ../sass/layout/_itemList.scss */
+/* line 12, ../sass/layout/_itemList.scss */
 .itemInfo .inner img {
   border: 2px solid black;
   border-radius: 5px;
@@ -246,7 +247,7 @@ img {
   }
 }
 
-/* line 23, ../sass/layout/_itemList.scss */
+/* line 24, ../sass/layout/_itemList.scss */
 .itemName {
   font-weight: 700;
   min-height: 40px;
@@ -255,25 +256,25 @@ img {
   font-size: 26px;
 }
 @media screen and (max-width: 1200px) {
-  /* line 23, ../sass/layout/_itemList.scss */
+  /* line 24, ../sass/layout/_itemList.scss */
   .itemName {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 23, ../sass/layout/_itemList.scss */
+  /* line 24, ../sass/layout/_itemList.scss */
   .itemName {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 23, ../sass/layout/_itemList.scss */
+  /* line 24, ../sass/layout/_itemList.scss */
   .itemName {
     font-size: 24px;
   }
 }
 
-/* line 40, ../sass/layout/_itemList.scss */
+/* line 41, ../sass/layout/_itemList.scss */
 .description {
   text-align: left;
   padding: 5px 20px;
@@ -281,50 +282,50 @@ img {
   min-height: 125px;
 }
 @media screen and (max-width: 996px) {
-  /* line 45, ../sass/layout/_itemList.scss */
+  /* line 46, ../sass/layout/_itemList.scss */
   .description li {
     font-size: 14px;
     line-height: 1.5em;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 40, ../sass/layout/_itemList.scss */
+  /* line 41, ../sass/layout/_itemList.scss */
   .description {
     min-height: 155px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 40, ../sass/layout/_itemList.scss */
+  /* line 41, ../sass/layout/_itemList.scss */
   .description {
     font-size: 1.3em;
     min-height: 70px;
   }
 }
 
-/* line 60, ../sass/layout/_itemList.scss */
+/* line 61, ../sass/layout/_itemList.scss */
 .askingPrice {
   font-size: 20px;
 }
 
-/* line 64, ../sass/layout/_itemList.scss */
+/* line 65, ../sass/layout/_itemList.scss */
 .price {
   font-size: 36px;
-  font-weigth: 700;
+  font-weight: 700;
   margin-bottom: 10px;
   transition: background 0.5s, color 0.5s;
 }
-/* line 69, ../sass/layout/_itemList.scss */
+/* line 70, ../sass/layout/_itemList.scss */
 .price:hover {
   background: #222;
   color: #eee;
   transition: background 0.5s, color 0.5s;
 }
 
-/* line 77, ../sass/layout/_itemList.scss */
+/* line 78, ../sass/layout/_itemList.scss */
 .description li {
   text-align: left;
 }
-/* line 80, ../sass/layout/_itemList.scss */
+/* line 81, ../sass/layout/_itemList.scss */
 .description span {
   font-weight: 700;
 }
@@ -335,62 +336,68 @@ img {
   min-height: 40vh;
   color: white;
 }
+/* line 6, ../sass/layout/_contact.scss */
+#contactUs span {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #94c1e7;
+}
 
-/* line 9, ../sass/layout/_contact.scss */
+/* line 10, ../sass/layout/_contact.scss */
 .contact-container h3 {
   font-size: 2em;
   font-weight: 700;
 }
-/* line 13, ../sass/layout/_contact.scss */
+/* line 14, ../sass/layout/_contact.scss */
 .contact-container a {
   text-decoration: none;
 }
-/* line 16, ../sass/layout/_contact.scss */
+/* line 17, ../sass/layout/_contact.scss */
 .contact-container p {
   padding: 10px 0;
   font-size: 1.15em;
 }
-/* line 19, ../sass/layout/_contact.scss */
+/* line 20, ../sass/layout/_contact.scss */
 .contact-container p a {
   font-weight: 700;
-  color: #569cd9;
+  color: #ce782e;
   transition: color 0.5s;
 }
-/* line 23, ../sass/layout/_contact.scss */
+/* line 24, ../sass/layout/_contact.scss */
 .contact-container p a:hover {
-  color: #E6E6F1;
+  color: #2E84CE;
   transition: color 0.5s;
 }
 
-/* line 32, ../sass/layout/_contact.scss */
+/* line 33, ../sass/layout/_contact.scss */
 .mail-button {
   font-size: 1.2em;
   font-weight: 700;
   transition: background 0.5s, color 0.5s;
   color: #153FA3;
 }
-/* line 37, ../sass/layout/_contact.scss */
+/* line 38, ../sass/layout/_contact.scss */
 .mail-button:hover {
   color: #E6E6F1;
   background-color: #2E84CE;
   transition: background 0.5s, color 0.5s;
 }
 
-/* line 45, ../sass/layout/_contact.scss */
+/* line 46, ../sass/layout/_contact.scss */
 footer {
   width: 100%;
   background-color: #28313C;
   text-align: right;
 }
-/* line 49, ../sass/layout/_contact.scss */
+/* line 50, ../sass/layout/_contact.scss */
 footer h6 {
   color: white;
 }
-/* line 51, ../sass/layout/_contact.scss */
+/* line 52, ../sass/layout/_contact.scss */
 footer h6 a {
   color: #9BC8E5;
 }
-/* line 53, ../sass/layout/_contact.scss */
+/* line 54, ../sass/layout/_contact.scss */
 footer h6 a:hover {
   color: #2E84CE;
   text-decoration: none;
